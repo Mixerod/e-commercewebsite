@@ -4,7 +4,7 @@ import { NextResponse, type NextRequest } from 'next/server'
 // Email duy nhất được cấp quyền Admin
 const ADMIN_EMAIL = 'minhquyet08122003@gmail.com'
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   // Tạo response chuẩn của Next.js
   let supabaseResponse = NextResponse.next({
     request,
